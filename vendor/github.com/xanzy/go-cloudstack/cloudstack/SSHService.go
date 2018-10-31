@@ -206,7 +206,7 @@ type ResetSSHKeyForVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`

@@ -503,7 +503,7 @@ type DeployVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -759,7 +759,7 @@ type DestroyVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -1003,7 +1003,7 @@ type RebootVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -1269,7 +1269,7 @@ type StartVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -1525,7 +1525,7 @@ type StopVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -1769,7 +1769,7 @@ type ResetPasswordForVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -2121,7 +2121,7 @@ type UpdateVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -2772,7 +2772,7 @@ type VirtualMachine struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -3078,7 +3078,7 @@ type RestoreVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -3329,7 +3329,7 @@ type ChangeServiceForVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -3696,7 +3696,7 @@ type AssignVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -3962,7 +3962,7 @@ type MigrateVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -4234,7 +4234,7 @@ type MigrateVirtualMachineWithVolumeResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -4457,7 +4457,7 @@ type RecoverVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -4848,7 +4848,7 @@ type AddNicToVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -5104,7 +5104,7 @@ type RemoveNicFromVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
@@ -5360,7 +5360,7 @@ type UpdateDefaultNicForVirtualMachineResponse struct {
 		Type             string `json:"type,omitempty"`
 		Virtualmachineid string `json:"virtualmachineid,omitempty"`
 	} `json:"nic,omitempty"`
-	Ostypeid        int64  `json:"ostypeid,omitempty"`
+	Ostypeid        string `json:"ostypeid,omitempty"`
 	Password        string `json:"password,omitempty"`
 	Passwordenabled bool   `json:"passwordenabled,omitempty"`
 	Project         string `json:"project,omitempty"`
