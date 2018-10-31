@@ -1,6 +1,6 @@
 builds:
   - main: main.go
-    binary: "terraform-provider-cloudstack_{{.Tag}}-exoscale"
+    binary: "terraform-provider-cloudstack_{{.Tag}}_x-exoscale-{{.Commit}}"
     goos:
       - darwin
       - linux
